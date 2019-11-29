@@ -88,4 +88,45 @@ Para terminar la instalación de PHP, puedes descargar diferentes módulos que t
 
 Usa las flechas para moverte hacia arriba y abajo, y pulsa Q para salir.
 
-Y si quisieras una descripción más detallada del paquete, solamente tendrías que poner "apt show package_name"
+Y si quisieras una descripción más detallada del paquete, solamente tendrías que poner "apt show nombre_paquete"
+
+### Paso 4: Instalar phpMyAdmin
+
+Terminaremos descargándonos el phpMyAdmin, para que podamos acceder a la base de datos con solo poner *nuestro_URL/phpMyAdmin*
+
+Lo primero de todo, instalaremos phpMyAdmin en el servidor remoto.
+
+![myAdmin](../capturas/myAdmin.PNG)
+
+Se nos empezarán a instalar phpMyAdmin
+
+#### ADVERTENCIA:
+En la instalación nos saldrá un pantallazo con dos checkbox con el nombre de apache2 justo alado de uno de los checkbox
+
+![apache2](../capturas/mysqladmin_apache2.PNG)
+
+Tienes que darle al espacio para seleccionar apache2 y posteriormente darle al enter.
+
+Te volverá a saltar otro pantallazo. Este pantallazo te dirá que phpmyadmin necesita una base de datos y por ende, te pregunta si puede crear una o, en el caso de que seas un administrador de bases de datos avanzado quieras crear una base de datos por ti solo. En el caso de que sepas manejar la base de datos y quieras crear una pulsa no.
+
+![pantallazo](../capturas/pantallazo.PNG)
+
+por último te pedirá que escribas una contraseña para el administrador de la base de datos y otra para la aplicación.
+
+Trás la instalación, en el directorio *etc/apache2/conf-enabled* se añadirá un archivo de configuración de phpMyAdmin Apache.
+
+Habilitamos las extensiones de PHP mediante los siguientes códigos
+
+![extensionesPHP](https://i.gyazo.com/0bc1096e2c0cc9a956dcaab01b0c3b13.png)
+
+y por último reiniciamos el servidor apache para que se guarden los cambios
+
+![reiniciarApache](../capturas/restartApache.PNG)
+
+y finalmente accederemos mediante nuestro navegador a la base de datos de nuestro server.
+
+![baseDeDatos](../capturas/phpmyadmin.PNG)
+
+### Fuentes
+* [Cómo instalar en Ubuntu 18.04 la pila LAMP — Linux, Apache, MySQL y PHP](https://www.digitalocean.com/community/tutorials/como-instalar-en-ubuntu-18-04-la-pila-lamp-linux-apache-mysql-y-php-es)
+* [¿Cómo Instalar y Proteger phpMyAdmin en Ubuntu 16.04?](https://www.digitalocean.com/community/tutorials/como-instalar-y-proteger-phpmyadmin-en-ubuntu-16-04-es)
