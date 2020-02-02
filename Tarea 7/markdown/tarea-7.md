@@ -1,6 +1,6 @@
-### Tarea 7: automatizar 
+### Tarea 7: automatización de la copia de seguridad
 
-En esta evidencia, aprenderemos lo que hicimos en la evidencia 6 - copia de seguridad pero esta vez, lo vamos a automatizar para que cree una copia de seguridad cada semana.
+En esta evidencia, aprenderemos lo que hicimos en la [evidencia 6 - copia de seguridad](https://github.com/ekaitz888/evidencias/blob/master/Tarea%206/markdown/tarea6.md) pero esta vez, lo vamos a automatizar para que cree una copia de seguridad cada semana.
 
 Lo primero de todo será crear una carpeta llamada backup en la que guardaremos un archivo php.
 
